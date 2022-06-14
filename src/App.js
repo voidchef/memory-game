@@ -34,6 +34,10 @@ function App() {
     shuffleCards(obj);
   };
 
+  useEffect(() => {
+    newGame();
+  }, []);
+
   return <div className="App"></div>;
 }
 
