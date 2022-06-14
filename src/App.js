@@ -9,6 +9,15 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [displayText, setDisplayText] = useState("");
 
+  const shuffleCards = (obj) => {
+    for (let i = obj.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [obj[i], obj[j]] = [obj[j], obj[i]];
+    }
+
+    setCards(obj);
+  };
+
   const newGame = () => {
     let arr = new Set();
 
@@ -21,6 +30,8 @@ function App() {
     for (let i = 0; i < maxCards; i++) {
       obj.push(data["card"][arr[i]]);
     }
+
+    shuffleCards(obj);
   };
 
   return <div className="App"></div>;
