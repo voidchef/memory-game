@@ -42,6 +42,10 @@ function App() {
     setScore(0);
   };
 
+  const handleScore = (score) => setScore(score);
+
+  const handleDisplayText = (text) => setDisplayText(text);
+
   return <div className="App"></div>;
 }
 
