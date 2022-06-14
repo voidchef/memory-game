@@ -1,0 +1,17 @@
+.card {
+  text-align: center;
+}
+
+.cardArt {
+  height: 80%;
+  width: 96%;
+  border: 5px outset rgb(240, 178, 22);
+}
+
+.cardText {
+  font-size: 22px;
+  font-weight: 40px;
+  background-color: rgba(0, 0, 0, 0.603);
+  margin: 0 auto;
+  color: white;
+}
