@@ -48,8 +48,34 @@ function App() {
     if (score >= highScore) setHighScore(score);
   }, [score]);
 
-
   const handleDisplayText = (text) => setDisplayText(text);
+
+  const handleGameLogic = (e, id) => {
+    const index = cards.map((e) => e.id).indexOf(id);
+
+    if (cards[index]["chosen"] === false) {
+      const obj = cards.map((card) => {
+        if (card.id === id) {
+          return {
+            ...card,
+            chosen: true,
+          };
+        } else {
+          return {
+            ...card,
+          };
+        }
+      });
+
+      handleScore(score + 1);
+      handleDisplayText("");
+      shuffleCards(obj);
+    } else {
+      resetGame();
+      handleDisplayText("You chose the same card twice! Try again!");
+      newGame();
+    }
+  };
 
   return <div className="App"></div>;
 }
