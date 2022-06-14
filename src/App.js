@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import data from "./utils/data";
+import Header from "./components/Header";
 import "./styles/App.css";
 
 function App() {
@@ -77,7 +78,11 @@ function App() {
     }
   };
 
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Header score={score} highScore={highScore} displayText={displayText} />
+    </div>
+  );
 }
 
 export default App;
