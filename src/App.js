@@ -38,6 +38,10 @@ function App() {
     newGame();
   }, []);
 
+  const resetGame = () => {
+    setScore(0);
+  };
+
   return <div className="App"></div>;
 }
 
