@@ -44,6 +44,11 @@ function App() {
 
   const handleScore = (score) => setScore(score);
 
+  useEffect(() => {
+    if (score >= highScore) setHighScore(score);
+  }, [score]);
+
+
   const handleDisplayText = (text) => setDisplayText(text);
 
   return <div className="App"></div>;
