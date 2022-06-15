@@ -6,6 +6,8 @@ Project to create a Memory Card Game
 
 [Memory Card Game](https://voidchef.github.io/memory-game/)
 
+![memory-game](https://user-images.githubusercontent.com/79092620/173880689-4a9f2af1-eccd-4f94-a013-fd4a4f7747df.png)
+
 **Note:** This Website works best with High Resolution Screens (1080p and up). Check the [improvements section](#improvements) for future updates.
 
 ## Features
